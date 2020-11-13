@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Estilização do Header e NavBar */
+
+header {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-transform: uppercase;
+}
+
+header .header-text {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.322);
+    color: #151715;
+}
+
+header h1 {
+    font-size: 5rem;
+}
+
+header p {
+    font-size: 25px;
+}
+
+nav {
+    height: 8vh;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.bg-custom {
+    background-color: #044c5c;
+    text-transform: uppercase;
+    border-bottom: 4px solid #14637c;
+}
+
+.bg-custom ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bg-custom a {
+    padding-top: 15px;
+    color: rgb(170, 170, 170);
+}
+
+.bg-custom a:hover {
+    color: white;
+    border-bottom: 4px solid white;   
+}
+
+.menu-active {
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+/* Estilização do conteúdo principal */
+
+section {
+    padding: 12vh 2%;
+    color: #151715;
+}
+
+section h2 {
+    font-size: 45px;
+    margin-bottom: 8vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: #151715;
+}
+
+/* Seção Sobre */
+
+.section-sobre {
+    background-color: #e6eef0;
+}
+
+.section-sobre p {
+    font-size: 21px;
+    margin-bottom: 15px;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* Seção Tecnologias */
+
+.section-tecnologias {
+    background-color: #d7e7ee;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-content {
+    background-color: #f1f6fa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.507);
+}
+
+.grid-content img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.grid-content p {
+    font-size: 23px;
+    color: #151715;
+}
+
+/* Seção Projetos */
+
+.section-projetos {
+    background-color: #c1d7e0;
+}
+
+.card {
+    margin: 90px 0;
+    background-color: #f1f6fa;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.507);
+}
+
+.btn-group a {
+    font-size: initial;
+    margin-top: unset;
+    background-color: #04415b;
+}
+
+.btn-group a:hover {
+    background-color: #185670;
+}
+
+.card-img-bottom {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Seção Contato */
+
+.section-contato {
+    background-color: #65a4bb;
+}
+
+.section-contato p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 6vh;
+    color: #151715;
+}
+
+.section-contato form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section-contato form input {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.section-contato form textarea {
+    height: 180px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.section-contato form input:focus, .section-contato form textarea:focus {
+    color: #151715;
+}
+
+.form-group label {
+    color: #151715;
+}
+
+.section-contato form button {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: #14637c;
+    border: 2px solid rgb(212, 212, 212);
+    color: rgb(212, 212, 212);
+    transition: 0.2s;
+}
+
+.section-contato form button:hover {
+    background-color: #277c96;
+    color: rgb(212, 212, 212);
+}
+
+/* Estilização do Footer */
+
+footer {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #044c5c;
+}
+
+.footer-socials {
+    margin: 40px;
+    font-size: 30px;
+}
+
+.footer-socials a {
+    font-size: 25px;
+    margin: 0 15px;
+    padding: 15px;
+    border: 1px solid rgb(212, 212, 212);
+    color: rgb(212, 212, 212);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.footer-socials a:hover {
+    background-color: #277c96;
+    color: rgb(212, 212, 212);
+}
+
+footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(212, 212, 212);
+}
