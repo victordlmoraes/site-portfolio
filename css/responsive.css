@@ -1,0 +1,46 @@
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    header a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    header a > i {
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    header a {
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 5vh;
+    }
+
+    header a > i {
+        font-size: 22px;
+        padding-left: 10px;
+    }
+}
