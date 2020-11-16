@@ -1,20 +1,21 @@
 $(function(){
-    var links = $('nav ul li a');
-    var navHeight = $('nav').height()
-    $(window).scroll(function(){
-        var topScroll = $(window).scrollTop();
-        links.each(function(){
-            var href = $(this).attr('href');
-            var el = $(href);
-            var posSection = el.offset().top;
-            var hSection = el.height();
+    // Animação suave do scroll
+    $('nav a').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top,
+            menuHeight = $('nav').innerHeight();
 
-            if((posSection - navHeight) <= topScroll && (posSection + hSection) > topScroll){
-                links.removeClass('menu-active');
-                $(this).addClass('menu-active');
-            }else{
-                $(this).removeClass('menu-active');
-            }
-        })
-    })
+        $('html, body').animate({scrollTop: targetOffset - menuHeight}, 500);
+
+        $('nav ul li').on('click', function(){
+            $(this).addClass('menu-active');
+            $(this).siblings().removeClass('menu-active');
+        });
+    });
+
+    // Abertura e fechamento do menu mobile
+    $('#nav-mobile i').click(function(){
+        $('#nav-mobile ul').slideToggle();
+    });
 });

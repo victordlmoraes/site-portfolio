@@ -43,4 +43,48 @@
         font-size: 22px;
         padding-left: 10px;
     }
+
+    #nav-desktop {
+        display: none;
+    }
+
+    #nav-mobile {
+        display: block;
+    }
+
+    .section-contato form {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 45px 0;
+    }
+
+    .btn-group a {
+        font-size: 12px;
+    }
+
+    .footer-socials a {
+        font-size: 22px;
+        margin: 0 3px;
+        padding: 10px;
+    }
 }
